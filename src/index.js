@@ -2,6 +2,7 @@ const express = require("express");
 
 // intializations
 const app = express();
+require('./mongodb');
 
 // settings
 app.set("port", process.env.PORT || 3000);
