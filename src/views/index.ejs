@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Products</title>
+    <%- include("head") -%>
+  </head>
+
+  <body>
+    <%- include("navigation") %>
+    <div class="container p-4">
+      <div class="row">
+        <div class="card-columns">
+          <% products.forEach(function (product) { %>
+          <div class="card animated fadeInDown">
+
+            <img
+            src="https://<%= product.image %>"
+            class="card-img-top"
+            alt=" "
+          />
+
+            <div class="card-body">
+              <h5 class="card-title"><%= product.brand %></h5>
+              <table class="table table-striped">
+                <tr>
+                  <th scope="row">Price</th>
+                  <td scope="col">$ <%= product.price %></td>
+
+                </tr>
+                <tr>
+                  <th scope="row">ID</th>
+                  <td scope="col"><%= product.id %></td>
+  
+                </tr>
+                <td scope="col" align="justify" colspan="4">
+                  <p class="card-text"><%= product.description %></p>
+                </td>
+              </table>
+
+              <a
+                href=" "
+                class="btn btn-primary btn-block"
+              >
+                Me interesa
+              </a>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

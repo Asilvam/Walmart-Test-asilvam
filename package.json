@@ -11,10 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
     "mongoose": "^5.10.15"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.6"
   }
 }
