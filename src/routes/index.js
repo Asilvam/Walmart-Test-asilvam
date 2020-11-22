@@ -12,7 +12,8 @@ router.get("/", async (req, res) => {
   //Buscar publico
 router.post("/search", async (req, res) => {
     var q = eval("/^.*" + req.body.buscar + ".*$/i");
-    console.log(req.body," ",q);
+    //console.log(req.body," ",q);
+   // console.log(req.params," ",q);
     const products = await Product.find({
         brand: q,
       ///^.*hidr.*$/i
