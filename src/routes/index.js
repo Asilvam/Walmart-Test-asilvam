@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
 router.post("/search", async (req, res) => {
     var q = eval("/^.*" + req.body.buscar + ".*$/i");
     var espal=funciones.espalindrome(req.body.buscar);
-    console.log(espal);
+    //console.log(espal);
     //console.log(req.body," ",q);
     const products =  await Product.find({ brand: q, });
     //console.log(products_1.length);

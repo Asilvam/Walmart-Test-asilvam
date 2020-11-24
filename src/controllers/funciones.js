@@ -1,6 +1,6 @@
 module.exports = {
 espalindrome: (texto) =>{
-    console.log ('llego a espalindrome valor -->'+texto);
+    //console.log ('llego a espalindrome valor -->'+texto);
     if(texto.length <= 1){
         return false;
     } else {
@@ -9,9 +9,9 @@ espalindrome: (texto) =>{
         x=texto.length;
         while (x>1 && iguales){
             primero = texto.charAt(i);
-            console.log(primero);
+            //console.log(primero);
             ultimo =  texto.charAt(texto.length-(i+1));
-            console.log(ultimo);
+            //console.log(ultimo);
             if (primero!= ultimo){
                 iguales=false;         
             }
