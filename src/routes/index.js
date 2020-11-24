@@ -18,7 +18,7 @@ router.post("/search", async (req, res) => {
     //console.log(req.body," ",q);
     const products =  await Product.find({ brand: q, });
     //console.log(products_1.length);
-    if (!espal && products.length >0 && req.body.buscar != "" ){
+    if (espal && products.length >0 && req.body.buscar != "" ){
       const products_2= funciones.procesar(products);
     }
     res.render("index", { products});
