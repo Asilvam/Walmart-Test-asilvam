@@ -17,3 +17,5 @@ services:
                 - "27017:27017"
             logging:
               driver: none
+            volumes: 
+                - /data/db
