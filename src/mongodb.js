@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-//const URI ='mongodb+srv://root:admin@cluster0-jim6x.mongodb.net/test?retryWrites=true&w=majority';
-const URI = "mongodb://mongo/test"
+const URI ='mongodb+srv://root:admin@cluster0-jim6x.mongodb.net/test?retryWrites=true&w=majority';
+// const URI = "mongodb://mongo/test"
 mongoose
   .connect(URI, {
     useCreateIndex: true,
